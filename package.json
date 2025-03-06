@@ -1,27 +1,27 @@
 {
-  "name": "loops-campaign-api",
-  "version": "0.1.1",
-  "license": "MIT",
-  "module": "src/index.ts",
-  "main": "dist/index.ts",
-  "type": "module",
-  "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
-  "dependencies": {
-    "@arethetypeswrong/cli": "^0.17.4",
-    "@changesets/cli": "^2.28.1"
-  },
-  "scripts": {
-    "build": "tsc",
-    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
-    "check": "biome check && npm run check-exports",
-    "format": "biome format --write",
-    "local-publish": "changeset version && changeset publish",
-    "prepublishOnly": "npm run check"
-  }
+	"name": "loops-campaign-api",
+	"version": "0.1.1",
+	"license": "MIT",
+	"module": "src/index.ts",
+	"main": "dist/index.ts",
+	"type": "module",
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"@arethetypeswrong/cli": "^0.17.4",
+		"@changesets/cli": "^2.28.1"
+	},
+	"scripts": {
+		"build": "tsc",
+		"check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+		"check": "biome check && npm run check-exports",
+		"format": "biome format --write",
+		"local-publish": "changeset version && changeset publish",
+		"prepublishOnly": "npm run check"
+	}
 }
