@@ -1,6 +1,7 @@
 {
   "name": "loops-campaign-api",
   "version": "0.1.1",
+  "license": "MIT",
   "module": "src/index.ts",
   "main": "dist/index.ts",
   "type": "module",
@@ -19,6 +20,8 @@
     "build": "tsc",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
     "check": "biome check && npm run check-exports",
-    "format": "biome format --write"
+    "format": "biome format --write",
+    "local-publish": "changeset version && changeset publish",
+    "prepublishOnly": "npm run check"
   }
 }
