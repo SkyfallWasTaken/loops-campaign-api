@@ -28,7 +28,7 @@ import LoopsClient from "loops-campaign-api";
 
 const loops = new LoopsClient(sessionToken); // The cookie value obtained from the previous step
 
-const campaignId = await loopsClient.createCampaign({
+const campaignId = await loopsClient.createAndSendCampaign({
 	// An emoji to identify this campaign in the Loops dashboard.
 	emoji: "📰",
 	// The name of the campaign. This will be displayed in the Loops dashboard.
@@ -53,7 +53,7 @@ const campaignId = await loopsClient.createCampaign({
 });
 ```
 
-And that's it! You've successfully created your first campaign!
+And that's it! You've successfully sent your first campaign!
 
 ## Getting support
 
